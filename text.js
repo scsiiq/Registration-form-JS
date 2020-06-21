@@ -6,17 +6,17 @@ let name = document.getElementById("name"),
     ageInput = document.querySelectorAll("input")[2];
 
 nameInput.addEventListener('input', function() {
-    name.innerHTML = `Моё имя: ${nameInput.value}`;
+    name.innerHTML = `My name: ${nameInput.value}`;
 });
 
 surnameInput.addEventListener('input', function() {
-    surname.innerHTML = `Моя фамилия: ${surnameInput.value}`;
+    surname.innerHTML = `My surname: ${surnameInput.value}`;
 });
 
 ageInput.addEventListener("input", () => {
     if (ageInput.value.length > 2) {
-      age.innerHTML = 'Непохоже на реальный возраст';
+      age.innerHTML = 'Doesn't look like a real age';
     } else {
-      age.innerHTML = `Мне: ${ageInput.value} лет`
+      age.innerHTML = `To me: ${ageInput.value} years`
     }
 });
